@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --primary: #22c55e;
+  --text: #111;
+  --border: #e5e7eb;
+  --bg: #ffffff;
+
+  --foreground: oklch(0.145 0 0);
+  --muted: #f9f9fa;
+  --muted-foreground: #717182;
+  
+  --terminal-green: #10b981;
+  --terminal-blue: #3b82f6;
+  --terminal-purple: #8b5cf6;
+  --terminal-gray: #6b7280;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}

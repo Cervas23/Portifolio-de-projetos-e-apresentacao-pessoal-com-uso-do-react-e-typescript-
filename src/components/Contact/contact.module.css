@@ -1,0 +1,42 @@
+.container {
+  padding: 80px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.left {
+  max-width: 400px;
+}
+
+.text {
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.textarea {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  min-height: 120px;
+}
+
+.button {
+  background: #020617;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
