@@ -1,73 +1,91 @@
-# React + TypeScript + Vite
+# 🚀 Portfólio - Lucas Cervantes Luz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é um portfólio pessoal desenvolvido com foco em apresentar minhas habilidades, projetos e evolução na área de desenvolvimento web.
 
-Currently, two official plugins are available:
+A aplicação foi construída utilizando React e TypeScript, com uma interface moderna, responsiva e inspirada em um estilo minimalista voltado para desenvolvedores.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🛠️ Tecnologias utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* TypeScript
+* CSS Modules
+* Framer Motion
+* Vite
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ▶️ Como rodar o projeto localmente
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Clone o repositório:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/Cervas23/SEU-REPOSITORIO.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Acesse a pasta do projeto:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd SEU-REPOSITORIO
 ```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Execute o projeto:
+
+```bash
+npm run dev
+```
+
+A aplicação estará disponível em:
+
+```bash
+http://localhost:5173
+```
+
+---
+
+## 🌐 Deploy / Versão online
+
+O projeto pode ser acessado online através do link abaixo:
+
+👉 [Portifólio](https://portifolio-de-projetos-e-apresentac.vercel.app/)
+
+---
+
+## 📂 Projetos apresentados
+
+### 🧳 Agência de Turismo
+
+Plataforma web desenvolvida com foco em apresentar destinos e conteúdos relacionados a viagens. O projeto inclui páginas dinâmicas e estrutura organizada para navegação.
+
+🔗 https://github.com/Cervas23/Ebac_Front-end_ExercicioPratico_Mod22_ViaLuz
+
+---
+
+### 📓 Diário de Bordo
+
+Aplicação web com possibilidade de registro de atividades e experiências, com opção de download em formato de aplicativo (PWA).
+
+🔗 https://github.com/Cervas23/Ebac_Front-end_ExercicioPratico_Mod31_DiarioBordo
+
+---
+
+### 📚 Catálogo de Livros
+
+Sistema que permite ao usuário criar e organizar sua própria biblioteca virtual, com foco em organização e personalização.
+
+🔗 https://github.com/Cervas23/Ebac_Front-end_ExercicioPratico_Mod21-React-ts
+
+---
+
+## 📌 Objetivo do projeto
+
+Este portfólio tem como objetivo demonstrar minha transição da área de Engenharia de Controle e Automação para o desenvolvimento de software, aplicando lógica, organização e boas práticas na construção de aplicações web.
+
+
