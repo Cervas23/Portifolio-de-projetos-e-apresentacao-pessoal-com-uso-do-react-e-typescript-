@@ -3,26 +3,26 @@ import type { Project } from "../types/Project";
 export const projects: Project[] = [
   {
       id: 1,
-      title: 'Sistema de Gestão',
-      description: 'Plataforma web para gerenciamento de processos empresariais com dashboard analytics.',
-      techs: ['React', 'Node.js', 'PostgreSQL'],
-      link: '#',
-      imagem: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop'
+      title: 'Agência de turismo',
+      description: 'Plataforma web de uma agência de turismo, com locais para viajar e com um blog de entretenimento.',
+      techs: ['Next.js', 'TypeScript', 'Css Modules'],
+      link: 'https://github.com/Cervas23/Ebac_Front-end_ExercicioPratico_Mod22_ViaLuz',
+      imagem: '/vialuz.png'
     },
     {
       id: 2,
-      title: 'App Mobile',
-      description: 'Aplicativo de produtividade com sincronização em tempo real e interface intuitiva.',
-      techs: ['React Native', 'Firebase', 'TypeScript'],
-      link: '#',
-      imagem: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=500&fit=crop'
+      title: 'Diário de Bordo',
+      description: 'Plataforma web, com possibilidade de baixar o aplicativo, para registro de atividades e relatos de viagem.',
+      techs: ['HTML', 'JavaScript', 'PWA'],
+      link: 'https://github.com/Cervas23/Ebac_Front-end_ExercicioPratico_Mod31_DiarioBordo',
+      imagem: '/DiarioBordo.png'
     },
     {
       id: 3,
-      title: 'API REST',
-      description: 'API escalável para integração de sistemas com documentação completa e testes automatizados.',
-      techs: ['Python', 'FastAPI', 'Docker'],
-      link: '#',
-      imagem: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=500&fit=crop'
+      title: 'Catálogo de livros',
+      description: 'Porjeto que permite criar sua própria biblioteca virtual, com opções de organização e personalização.',
+      techs: ['TypeScript', 'Css Modules', 'API REST'],
+      link: 'https://github.com/Cervas23/Ebac_Front-end_ExercicioPratico_Mod21-React-ts',
+      imagem: '/CatalogoLivros.png'
     }
 ]

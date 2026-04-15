@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { projects } from '../../data/dt-projects';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { CardProject } from '../cardProject';
 import styles from "./projects.module.css"
 
 export const Projects = () => {
@@ -47,6 +48,7 @@ export const Projects = () => {
                                         </h3>
                                         <a
                                         href={project.link}
+                                        target="_blank"
                                         className={styles.link}
                                         >
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
@@ -57,17 +59,7 @@ export const Projects = () => {
                                         {project.description}
                                     </p>
 
-                                    <div className={styles.tags}>
-                                        {project.techs.map((tech, techIdx) => (
-                                            <span
-                                                key={techIdx}
-                                                className={styles.tag}
-                                                style={{ fontFamily: 'var(--font-mono)', fontSize: '13px' }}
-                                            >
-                                                {tech}
-                                            </span>
-                                        ))}
-                                    </div>
+                                    <CardProject techs={project.techs} />
                                 </div>
                             </div>
                         </motion.div>

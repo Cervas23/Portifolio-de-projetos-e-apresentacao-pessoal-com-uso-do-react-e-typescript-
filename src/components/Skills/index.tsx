@@ -1,52 +1,55 @@
 import { motion } from 'motion/react';
+import styles from './skills.module.css';
 
-export const Hability = () => {
+export const Skills = () => {
 
     const skills = [
         { name: 'JavaScript/TypeScript', level: 90 },
         { name: 'React & Next.js', level: 85 },
-        { name: 'Node.js', level: 80 },
-        { name: 'Python', level: 75 },
-        { name: 'SQL/NoSQL', level: 70 },
-        { name: 'Docker & CI/CD', level: 65 }
+        { name: 'Python', level: 80 },
+        { name: 'IA/Machine Learning', level: 75 },
+        { name: 'SQL', level: 70 },
+        { name: 'Versionamento', level: 65 }
     ];
 
     return (
-        <section id="habilidades" className="py-24 px-6">
-            <div className="max-w-4xl mx-auto">
+        <section id="habilidades" className={styles.section}>
+            <div className={styles.container}>
                 <motion.div
+                
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    <div className="mb-3" style={{ fontFamily: 'var(--font-mono)', fontSize: '14px', color: 'var(--terminal-gray)' }}>
+                    <div className={styles.textAba}>
                     // Stack técnico
                     </div>
-                    <h2 className="mb-16" style={{ fontFamily: 'var(--font-mono)', fontSize: '36px', fontWeight: 600 }}>
+                    <h2 className={styles.title}>
                         <span style={{ color: 'var(--terminal-green)' }}>&gt;</span> Habilidades
                     </h2>
 
-                    <div className="space-y-8">
+                    <div className={styles.containerBar}>
                         {skills.map((skill, idx) => (
                             <motion.div
                             key={idx}
+                            className={styles.item}
                             initial={{ opacity: 0, x: -20 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: idx * 0.1 }}
                             >
-                                <div className="flex items-center justify-between mb-2">
-                                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '14px' }}>
+                                <div className={styles.header}>
+                                    <span className={styles.name}>
                                     {skill.name}
                                     </span>
-                                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '13px', color: 'var(--terminal-gray)' }}>
+                                    <span className={styles.level}>
                                     {skill.level}%
                                     </span>
                                 </div>
-                                <div className="h-1.5 bg-muted rounded-full overflow-hidden">
+                                <div className={styles.bar}>
                                     <motion.div
-                                    className="h-full rounded-full"
+                                    className={styles.progress}
                                     style={{ backgroundColor: 'var(--terminal-green)' }}
                                     initial={{ width: 0 }}
                                     whileInView={{ width: `${skill.level}%` }}

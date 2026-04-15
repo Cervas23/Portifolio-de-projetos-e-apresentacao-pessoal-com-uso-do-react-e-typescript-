@@ -1,23 +1,79 @@
+.section {
+  padding: 6rem 1.5rem;
+  background: var(--muted);
+}
+
 .container {
-  padding: 80px 40px;
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: var(--font-mono);
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  line-height: 1.1;
+}
+
+.textAba {
+  color: var(--terminal-gray);
+  font-family: var(--font-mono);
+  margin-bottom: 0.5rem;
+  line-height: 1.8;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1fr 1fr;;
+  gap: 3rem;
 }
 
-.left {
-  max-width: 400px;
+.text{
+  line-height: 1.7;
+  color: var(--muted-foreground);
+  margin-bottom: 1.5rem;
 }
 
-.text {
-  color: var(--muted);
-  margin-bottom: 24px;
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contactLine{
+  color: var(--muted-foreground);
+  font-size: 1rem;
+
+  &:hover{
+    color: var(--foreground);
+    transition: color 0.3s ease;
+  }
+}
+
+.icon{
+  margin-right: 0.75rem;
+  
+}
+
+.contactText{
+  font-family: var(--font-mono);
+  text-decoration: none;
+  color: inherit;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
+}
+
+.formCampo{
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .input {
@@ -26,14 +82,22 @@
   border-radius: 8px;
 }
 
-.textarea {
+.inputText {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+}
+
+.textArea {
   padding: 12px;
   border: 1px solid var(--border);
   border-radius: 8px;
+  width: 100%;
   min-height: 120px;
+  resize: none;
 }
 
 .button {
+  font-family: var(--font-mono);
   background: #020617;
   color: white;
   padding: 12px;

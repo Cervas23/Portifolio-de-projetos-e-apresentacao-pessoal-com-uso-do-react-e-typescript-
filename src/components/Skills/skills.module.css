@@ -1,0 +1,67 @@
+.section {
+  padding: 7rem 1.5rem;
+  background: var(--bg);
+}
+
+.container {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: var(--font-mono);
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  line-height: 1.1;
+}
+
+.textAba {
+  color: var(--terminal-gray);
+  font-family: var(--font-mono);
+  margin-bottom: 0.5rem;
+  line-height: 1.8;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.containerBar {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.item {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.name {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+}
+
+.level {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--terminal-gray);
+}
+
+.bar {
+  height: 6px; /* h-1.5 */
+  background: var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: var(--terminal-green);
+  border-radius: 999px;
+}

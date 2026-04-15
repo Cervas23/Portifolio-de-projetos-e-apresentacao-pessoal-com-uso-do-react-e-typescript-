@@ -1,7 +1,14 @@
 .container {
-  text-align: center;
-  padding: 24px;
+  padding: 2rem;
   border-top: 1px solid var(--border);
-  color: var(--muted);
-  font-size: 14px;
+}
+
+.format{
+  text-align: center;
+}
+
+.text {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  font-family: var(--font-mono);
 }

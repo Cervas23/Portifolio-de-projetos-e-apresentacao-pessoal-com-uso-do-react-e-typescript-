@@ -21,13 +21,13 @@ export const Hero = () => {
                     <div className={styles.grid}>
                         <div>
                             <p className={styles.text}>
-                            Desenvolvedor com mais de 5 anos de experiência criando soluções digitais escaláveis e eficientes. Especializado em desenvolvimento web moderno com foco em performance, experiência do usuário e código limpo.
+                            Desenvolvedor em transição para a área de software, com sólida formação em Engenharia de Controle e Automação e forte base em raciocínio lógico, análise e resolução de problemas complexos. Atualmente focado no desenvolvimento web moderno, com atenção à performance, organização de código e experiência do usuário.
                             </p>
                             <p className={styles.text}>
-                            Ao longo da minha carreira, trabalhei em projetos de diversos segmentos, desde startups até empresas consolidadas, sempre buscando entregar valor através de tecnologia. Tenho experiência com arquitetura de software, desenvolvimento full stack e liderança técnica de equipes.
+                            Ao longo da minha trajetória na engenharia, adquiri experiência com programação e automação, habilidades que hoje aplico no desenvolvimento de aplicações web. Possuo conhecimentos em HTML, CSS, JavaScript, TypeScript, bancos de dados e Python, buscando sempre evoluir tecnicamente e construir soluções bem estruturadas e eficientes.
                             </p>
                             <p className={styles.text}>
-                            Apaixonado por resolver problemas complexos e transformar ideias em produtos funcionais que impactam positivamente a vida das pessoas.
+                            Tenho facilidade de aprendizado, boa organização e comprometimento com boas práticas de desenvolvimento. Valorizo o trabalho em equipe e estou em constante evolução, com o objetivo de transformar conhecimento técnico em soluções reais que gerem impacto positivo.
                             </p>
                         </div>
 
@@ -38,16 +38,22 @@ export const Hero = () => {
                                 </div>
                                 <div className={styles.textoCod}>
                                     <div>
-                                    <span className={styles.left}>anos:</span> <span style={{ color: 'var(--terminal-blue)' }}>5+</span>,
+                                        <span className={styles.left}>foco:</span> <span style={{ color: 'var(--terminal-blue)' }}>"Desenvolvimento Web"</span>,
                                     </div>
                                     <div>
-                                    <span className={styles.left}>projetos:</span> <span style={{ color: 'var(--terminal-blue)' }}>30+</span>,
+                                        <span className={styles.left}>background:</span> <span style={{ color: 'var(--terminal-blue)' }}>"Engenharia de Controle e Automação"</span>,
                                     </div>
                                     <div>
-                                    <span className={styles.left}>localização:</span> <span style={{ color: 'var(--terminal-green)' }}>"Brasil"</span>,
+                                        <span className={styles.left}>especialidade:</span> <span style={{ color: 'var(--terminal-green)' }}>"Resolução de problemas e lógica"</span>,
                                     </div>
                                     <div>
-                                    <span className={styles.left}>disponível:</span> <span style={{ color: 'var(--terminal-purple)' }}>true</span>
+                                        <span className={styles.left}>stack:</span> <span style={{ color: 'var(--terminal-green)' }}>["HTML", "CSS", "JavaScript", "TypeScript", "SQL"]</span>,
+                                    </div>
+                                    <div>
+                                      <span className={styles.left}>status:</span> <span style={{ color: 'var(--terminal-green)' }}>"Em evolução constante"</span>,
+                                    </div>
+                                    <div>
+                                        <span className={styles.left}>disponível:</span> <span style={{ color: 'var(--terminal-purple)' }}>true</span>
                                     </div>
                                 </div>
                                 <div className={styles.textoCod} style={{ marginBottom: '2.5rem' }}>
