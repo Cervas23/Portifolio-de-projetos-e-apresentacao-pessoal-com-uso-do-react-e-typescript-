@@ -1,11 +1,18 @@
 import { motion } from 'motion/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTerminal} from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import style from './header.module.css';
 
 export const Header = () => {
+
+    const [open, setOpen] = useState(false)
+
+    // trava scroll quando menu aberto
+    useEffect(() => {
+        document.body.style.overflow = open ? "hidden" : "auto"
+    }, [open])
 
     const [activeSection, setActiveSection] = useState('sobre');
 
@@ -48,6 +55,30 @@ export const Header = () => {
                             </motion.button>
                         ))}
                     </nav>
+
+                    {/* Botão hamburguer */}
+                    <button
+                        className={`${style.menuButton} ${open ? style.open : ""}`}
+                        onClick={() => setOpen(!open)}
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    {/* Overlay */}
+                    <div
+                        className={`${style.overlay} ${open ? style.show : ""}`}
+                        onClick={() => setOpen(false)}
+                    />
+
+                    {/* Menu lateral */}
+                    <aside className={`${style.sidebar} ${open ? style.show : ""}`}>
+                        <a href="#sobre" onClick={() => setOpen(false)}>Sobre</a>
+                        <a href="#projetos" onClick={() => setOpen(false)}>Projetos</a>
+                        <a href="#habilidades" onClick={() => setOpen(false)}>Habilidades</a>
+                        <a href="#contato" onClick={() => setOpen(false)}>Contato</a>
+                    </aside>
                 </div>
             </div>
         </header> 

@@ -104,3 +104,23 @@
   border-radius: 8px;
   border: none;
 }
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .input,
+  .textarea {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

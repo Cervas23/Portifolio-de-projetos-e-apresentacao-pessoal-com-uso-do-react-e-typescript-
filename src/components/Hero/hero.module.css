@@ -101,5 +101,24 @@
   text-decoration: none;
 }
 
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 1rem;
+  }
 
+  .title {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
 

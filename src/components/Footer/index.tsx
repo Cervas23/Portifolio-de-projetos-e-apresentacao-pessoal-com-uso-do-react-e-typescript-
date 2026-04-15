@@ -5,7 +5,7 @@ export const Footer = () => {
         <footer className={styles.container}>
             <div className={styles.format}>
                 <p className={styles.text}>
-                    © Lucas Cervavantes 2026 • Desenvolvido com React & TypeScript
+                    © Lucas Cervantes 2026 • Desenvolvido com React & TypeScript
                 </p>
             </div>
         </footer>

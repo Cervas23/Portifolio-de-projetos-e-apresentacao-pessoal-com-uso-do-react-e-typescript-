@@ -51,4 +51,86 @@
   color: var(--foreground);
 }
 
+/* Botão hamburguer */
+.menuButton {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.menuButton span {
+  width: 25px;
+  height: 2px;
+  background: var(--text);
+  transition: 0.3s;
+}
+
+/* animação -> X */
+.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Overlay escuro */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 260px;
+  height: 100vh;
+  background: white;
+  padding: 80px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  transition: right 0.3s ease;
+  box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 18px;
+}
+
+.sidebar.show {
+  right: 0;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+
+  .menuButton {
+    display: flex;
+  }
+
+}
 

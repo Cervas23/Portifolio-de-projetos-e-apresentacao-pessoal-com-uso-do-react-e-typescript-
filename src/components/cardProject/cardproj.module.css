@@ -12,3 +12,15 @@
   font-family: var(--font-mono);
   font-size: 0.875rem;
 }
+
+@media (max-width: 600px) {
+  .tags {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .tag {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}

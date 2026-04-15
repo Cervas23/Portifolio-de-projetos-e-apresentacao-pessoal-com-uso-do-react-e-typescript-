@@ -65,3 +65,17 @@
   background: var(--terminal-green);
   border-radius: 999px;
 }
+
+@media (max-width: 600px) {
+  .container {
+    gap: 24px;
+  }
+
+  .name {
+    font-size: 13px;
+  }
+
+  .level {
+    font-size: 12px;
+  }
+}

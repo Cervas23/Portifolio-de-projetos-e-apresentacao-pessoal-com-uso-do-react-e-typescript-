@@ -6,6 +6,14 @@ A aplicação foi construída utilizando React e TypeScript, com uma interface m
 
 ---
 
+🧠 Sobre o projeto
+
+Este portfólio marca minha transição da área de Engenharia de Controle e Automação para o desenvolvimento web.
+
+A base sólida em lógica, análise e resolução de problemas complexos foi aplicada na construção de interfaces bem estruturadas, com código organizado e foco em experiência do usuário.
+
+---
+
 ## 🛠️ Tecnologias utilizadas
 
 * React
@@ -13,6 +21,7 @@ A aplicação foi construída utilizando React e TypeScript, com uma interface m
 * CSS Modules
 * Framer Motion
 * Vite
+* Font Awesome
 
 ---
 

@@ -101,3 +101,28 @@
   gap: 8px;
 }
 
+@media (max-width: 600px) {
+  .list {
+    gap: 24px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  .link {
+    opacity: 1;
+  } 
+
+  .imageWrapper {
+    height: 200px;
+  }
+
+  .projectTitle {
+    font-size: 18px;
+  }
+}
