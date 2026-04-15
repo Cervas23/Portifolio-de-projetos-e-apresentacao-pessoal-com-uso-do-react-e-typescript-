@@ -21,13 +21,13 @@ A aplicação foi construída utilizando React e TypeScript, com uma interface m
 Clone o repositório:
 
 ```bash
-git clone https://github.com/Cervas23/SEU-REPOSITORIO.git
+git clone https://github.com/Cervas23/Portifolio-de-projetos-e-apresentacao-pessoal-com-uso-do-react-e-typescript-.git
 ```
 
 Acesse a pasta do projeto:
 
 ```bash
-cd SEU-REPOSITORIO
+cd meu-portifolio
 ```
 
 Instale as dependências:
