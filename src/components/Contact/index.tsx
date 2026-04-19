@@ -3,8 +3,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import styles from './contact.module.css';
+import { useForm } from "../../hooks/useForm";
 
 export const Contact = () => {
+    const { form, handleChange, resetForm } = useForm();
+
+    const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+
+    alert("Mensagem enviada com sucesso!")
+
+    resetForm()
+  }
+
     return (
         <section id="contato" className={styles.section}>
             <div className={styles.container}>
@@ -58,7 +69,7 @@ export const Contact = () => {
                             </div>
                         </div>
 
-                        <form className={styles.form}>
+                        <form className={styles.form} onSubmit={handleSubmit}>
                             <div className={styles.formCampo}>
                                 <label className={styles.inputText}>
                                     Nome
@@ -66,6 +77,10 @@ export const Contact = () => {
                                 <input
                                     type="text"
                                     className={styles.input}
+                                    name='name'
+                                    value={form.name}
+                                    onChange={handleChange}
+                                    placeholder="Seu nome"
                                 />
                             </div>
                             <div className={styles.formCampo}>
@@ -75,6 +90,10 @@ export const Contact = () => {
                                 <input
                                     type="email"
                                     className={styles.input}
+                                    name="email"
+                                    value={form.email}
+                                    onChange={handleChange}
+                                    placeholder="Seu email"
                                 />
                             </div>
                             <div className={styles.formCampo}>
@@ -83,7 +102,11 @@ export const Contact = () => {
                                 </label>
                                 <textarea
                                     rows={4}
+                                    name="message"
                                     className={styles.textArea}
+                                    value={form.message}
+                                    onChange={handleChange}
+                                    placeholder="Sua mensagem"
                                 />
                             </div>
                             <button
